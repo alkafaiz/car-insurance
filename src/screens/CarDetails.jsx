@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import CarDetailForm from "../containers/CarDetailForm";
 
 function CarDetails() {
-  return <div>car details</div>;
+  useEffect(() => {
+    document.title = "Car Detail | Car Insurance";
+  }, []);
+
+  return <CarDetailForm />;
 }
 
 export { CarDetails };
