@@ -1,3 +1,5 @@
+export * from "./Layout";
+
 export const ROOT = "/";
 export const STEPS = "/steps";
 export const PERSONAL_DETAILS = STEPS + "/personal-details";
