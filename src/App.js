@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Router, Switch, Route, Redirect } from "react-router-dom";
+import { ROOT, STEPS, PERSONAL_DETAILS, CAR_DETAILS, SUCCESS } from "./routes";
+import { createBrowserHistory } from "history";
+import { PersonalDetails, CarDetails, SubmitSuccess } from "./screens";
+
+const history = createBrowserHistory();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router history={history}>
+      <Switch>
+        <Redirect exact from={ROOT} to={PERSONAL_DETAILS} />
+        <Redirect exact from={STEPS} to={PERSONAL_DETAILS} />
+        <Route path={PERSONAL_DETAILS} component={PersonalDetails} />
+        <Route path={CAR_DETAILS} component={CarDetails} />
+        <Route path={SUCCESS} component={SubmitSuccess} />
+      </Switch>
+    </Router>
   );
 }
 
