@@ -1,7 +1,8 @@
 import React from "react";
+import Success from "../containers/Success";
 
 function SubmitSuccess() {
-  return <div>success</div>;
+  return <Success />;
 }
 
 export { SubmitSuccess };

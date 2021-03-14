@@ -5,8 +5,7 @@ import {
   FormLabel,
   Input,
   FormErrorMessage,
-  Button,
-  Box
+  Button
 } from "@chakra-ui/react";
 import * as Yup from "yup";
 import { useHistory } from "react-router-dom";
