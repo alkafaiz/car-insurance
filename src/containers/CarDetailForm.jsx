@@ -18,6 +18,7 @@ import * as Yup from "yup";
 import { useHistory } from "react-router-dom";
 import { PERSONAL_DETAILS, SUCCESS } from "../routes";
 import { FiArrowLeft } from "react-icons/fi";
+import DatePicker from "../components/DatePicker";
 
 function PersonalDetailForm() {
   const history = useHistory();
@@ -35,7 +36,7 @@ function PersonalDetailForm() {
     <Formik
       initialValues={{
         plateNumber: "",
-        hasClaim: true,
+        hasClaim: "yes",
         licenseYear: "0",
         carMake: "",
         carModel: "",
@@ -43,11 +44,10 @@ function PersonalDetailForm() {
       }}
       validationSchema={Yup.object({
         plateNumber: Yup.string().required("Required"),
-        hasClaim: Yup.bool().required("Required"),
         licenseYear: Yup.string().required("Required"),
         carMake: Yup.string().required("Required"),
-        carModel: Yup.string().required("Required")
-        //carManufacturerDate: Yup.string().required("Required")
+        carModel: Yup.string().required("Required"),
+        carManufacturerDate: Yup.date().required("Required")
       })}
       onSubmit={onSubmit}
     >
@@ -81,10 +81,18 @@ function PersonalDetailForm() {
                 <FormLabel as="legend">
                   Do you made any Claims in last 5 years?
                 </FormLabel>
-                <RadioGroup {...field}>
+                <RadioGroup
+                  // {...field}
+                  value={formik.values.hasClaim}
+                  onChange={value => {
+                    formik.setFieldValue("hasClaim", value);
+
+                    console.log("val", value);
+                  }}
+                >
                   <HStack spacing="24px">
-                    <Radio value={true}>Yes</Radio>
-                    <Radio value={false}>No</Radio>
+                    <Radio value="yes">Yes</Radio>
+                    <Radio value="no">No</Radio>
                   </HStack>
                 </RadioGroup>
               </FormControl>
@@ -136,6 +144,21 @@ function PersonalDetailForm() {
               </FormControl>
             )}
           </Field>
+
+          <DatePicker
+            label="Car manufacturer date"
+            placeholder="Car manufacturer date"
+            isRequired={true}
+            value={formik.values.carManufacturerDate}
+            onChange={date => formik.setFieldValue("carManufacturerDate", date)}
+            error={formik.errors.carManufacturerDate}
+            inputProps={formik.getFieldProps("carManufacturerDate")}
+            isInvalid={
+              formik.errors.carManufacturerDate &&
+              formik.touched.carManufacturerDate
+            }
+            maxDate={new Date()}
+          />
 
           <Flex mt={8}>
             <IconButton

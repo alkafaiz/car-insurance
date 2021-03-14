@@ -10,13 +10,23 @@ import {
 } from "./routes";
 import { createBrowserHistory } from "history";
 import { PersonalDetails, CarDetails, SubmitSuccess } from "./screens";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 const history = createBrowserHistory();
 
+const theme = extendTheme({
+  styles: {
+    global: {
+      ".datepicker-container": {
+        width: "100%"
+      }
+    }
+  }
+});
+
 function App() {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Layout>
         <Router history={history}>
           <Switch>

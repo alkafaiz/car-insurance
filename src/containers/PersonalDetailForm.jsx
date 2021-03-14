@@ -5,11 +5,14 @@ import {
   FormLabel,
   Input,
   FormErrorMessage,
-  Button
+  Button,
+  Box
 } from "@chakra-ui/react";
 import * as Yup from "yup";
 import { useHistory } from "react-router-dom";
 import { CAR_DETAILS } from "../routes";
+import DatePicker from "../components/DatePicker";
+import { subYears } from "date-fns";
 
 function PersonalDetailForm() {
   const history = useHistory();
@@ -21,13 +24,19 @@ function PersonalDetailForm() {
 
   return (
     <Formik
-      initialValues={{ firstName: "", lastName: "", dob: "", email: "" }}
+      initialValues={{
+        firstName: "",
+        lastName: "",
+        dob: "",
+        email: ""
+      }}
       validationSchema={Yup.object({
         firstName: Yup.string().required("Required"),
         lastName: Yup.string().required("Required"),
         email: Yup.string()
           .email("Invalid email format")
-          .required("Required")
+          .required("Required"),
+        dob: Yup.date().required("Required")
       })}
       onSubmit={onSubmit}
     >
@@ -72,8 +81,21 @@ function PersonalDetailForm() {
               </FormControl>
             )}
           </Field>
+
+          <DatePicker
+            label="Date of birth"
+            placeholder="Date of birth"
+            isRequired={true}
+            value={formik.values.dob}
+            onChange={date => formik.setFieldValue("dob", date)}
+            error={formik.errors.dob}
+            inputProps={formik.getFieldProps("dob")}
+            isInvalid={formik.errors.dob && formik.touched.dob}
+            maxDate={subYears(new Date(), 18)}
+            minDate={subYears(new Date(), 100)}
+          />
           <Button
-            mt={4}
+            mt={8}
             colorScheme="teal"
             isLoading={formik.isSubmitting}
             type="submit"
