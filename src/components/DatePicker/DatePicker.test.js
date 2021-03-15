@@ -1,6 +1,8 @@
-import { render } from "@testing-library/react";
+import { render, cleanup } from "@testing-library/react";
 import DatePicker from "./index";
 import React from "react";
+
+afterEach(cleanup);
 
 const defaultProps = {
   label: "Date picker"
@@ -37,5 +39,20 @@ describe("DatePicker component", () => {
     const error = getByTestId("error-text");
     expect(error).toBeDefined();
     expect(error.textContent).toBe(errorText);
+  });
+
+  it("should change selected date", () => {
+    const today = new Date();
+    const { getByPlaceholderText } = setup({
+      value: today,
+      placeholder: "Select date"
+    });
+
+    const input = getByPlaceholderText("Select date");
+    expect(input).toBeDefined();
+    expect(input.value).toBe(
+      `${today.getMonth() < 10 ? 0 : ""}${today.getMonth() +
+        1}/${today.getDate()}/${today.getFullYear()}`
+    );
   });
 });

@@ -3,6 +3,7 @@ module.exports = {
   moduleNameMapper: {
     "\\.(css|scss|pcss)$": "<rootDir>/__mocks__/CSSStub.js"
   },
+  setupFilesAfterEnv: ["<rootDir>/testSetup.js"],
   moduleFileExtensions: [
     "ts",
     "tsx",

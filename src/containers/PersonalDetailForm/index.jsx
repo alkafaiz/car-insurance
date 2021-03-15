@@ -10,13 +10,17 @@ import {
 } from "@chakra-ui/react";
 import * as Yup from "yup";
 import { useHistory } from "react-router-dom";
-import { CAR_DETAILS } from "../routes";
-import DatePicker from "../components/DatePicker";
+import { CAR_DETAILS } from "../../routes";
+import DatePicker from "../../components/DatePicker";
 import { subYears } from "date-fns";
 import { connect } from "react-redux";
-import { setPersonalDetails, setStepIndex } from "../features/appSlice";
+import { setPersonalDetails, setStepIndex } from "../../features/appSlice";
 
-function PersonalDetailForm({ nextStep, setPersonalDetails, initialValues }) {
+export function PersonalDetailForm({
+  nextStep,
+  setPersonalDetails,
+  initialValues
+}) {
   const history = useHistory();
 
   const onSubmit = values => {
