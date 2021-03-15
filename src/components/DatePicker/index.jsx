@@ -43,7 +43,7 @@ function CustomDatePicker({
         minDate={minDate}
         maxDate={maxDate}
       />
-      <FormErrorMessage>{error}</FormErrorMessage>
+      <FormErrorMessage data-testid="error-text">{error}</FormErrorMessage>
     </FormControl>
   );
 }
