@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 [https://alkafaiz.github.io/car-insurance/](https://alkafaiz.github.io/car-insurance/)
 
+> Insert **Plate number** as **111** to simulate failed API call
+
 ## Requirements
 
 1. Include 3 pages (personal details, car details, complete page)
