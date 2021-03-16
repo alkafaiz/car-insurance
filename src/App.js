@@ -1,4 +1,3 @@
-import "./App.css";
 import { Router, Switch, Route, Redirect } from "react-router-dom";
 import {
   ROOT,
