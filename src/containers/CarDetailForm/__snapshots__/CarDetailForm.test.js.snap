@@ -1,0 +1,750 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CarDetailForm container should render without crashing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div
+      id="chakra-toast-portal"
+    >
+      <ul
+        id="chakra-toast-manager-top"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; top: 0px; right: 0px; left: 0px;"
+      />
+      <ul
+        id="chakra-toast-manager-top-left"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; top: 0px; left: 0px;"
+      />
+      <ul
+        id="chakra-toast-manager-top-right"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; top: 0px; right: 0px;"
+      />
+      <ul
+        id="chakra-toast-manager-bottom-left"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; bottom: 0px; left: 0px;"
+      />
+      <ul
+        id="chakra-toast-manager-bottom"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; bottom: 0px; right: 0px; left: 0px;"
+      />
+      <ul
+        id="chakra-toast-manager-bottom-right"
+        style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; bottom: 0px; right: 0px;"
+      />
+    </div>
+    <div>
+      <h2
+        class="chakra-heading css-1r2fo6r"
+      >
+        Car detail
+      </h2>
+      <form
+        action="#"
+      >
+        <div
+          class="chakra-form-control css-1lxvb1z"
+          role="group"
+        >
+          <label
+            class="chakra-form__label css-5nk1it"
+            for="plate-number"
+            id="field-15-label"
+          >
+            Plate number
+            <span
+              aria-hidden="true"
+              class="chakra-form__required-indicator css-1u8qly9"
+              role="presentation"
+            >
+              *
+            </span>
+          </label>
+          <input
+            aria-describedby="field-15-feedback"
+            aria-required="true"
+            class="chakra-input css-1u8qly9"
+            id="plate-number"
+            name="plateNumber"
+            placeholder="Plate number"
+            required=""
+            value=""
+          />
+        </div>
+        <fieldset
+          class="chakra-form-control css-1lxvb1z"
+          role="group"
+        >
+          <legend
+            class="chakra-form__label css-5nk1it"
+            for="field-16"
+            id="field-16-label"
+          >
+            Do you made any Claims in last 5 years?
+            <span
+              aria-hidden="true"
+              class="chakra-form__required-indicator css-1u8qly9"
+              role="presentation"
+            >
+              *
+            </span>
+          </legend>
+          <div
+            class="chakra-radio-group css-1u8qly9"
+            role="radiogroup"
+          >
+            <div
+              class="chakra-stack css-73c8f7"
+            >
+              <label
+                class="chakra-radio css-lg1h1w"
+              >
+                <input
+                  aria-required="true"
+                  checked=""
+                  class="chakra-radio__input"
+                  id="field-16"
+                  name="radio-17"
+                  required=""
+                  style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                  type="radio"
+                  value="yes"
+                />
+                <span
+                  aria-hidden="true"
+                  class="chakra-radio__control css-1xwtn74"
+                  data-checked=""
+                />
+                <span
+                  class="chakra-radio__label css-1tcmnzo"
+                  data-checked=""
+                >
+                  Yes
+                </span>
+              </label>
+              <label
+                class="chakra-radio css-lg1h1w"
+              >
+                <input
+                  aria-required="true"
+                  class="chakra-radio__input"
+                  id="field-16"
+                  name="radio-17"
+                  required=""
+                  style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                  type="radio"
+                  value="no"
+                />
+                <span
+                  aria-hidden="true"
+                  class="chakra-radio__control css-1xwtn74"
+                />
+                <span
+                  class="chakra-radio__label css-1tcmnzo"
+                >
+                  No
+                </span>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <div
+          class="chakra-form-control css-1lxvb1z"
+          role="group"
+        >
+          <label
+            class="chakra-form__label css-5nk1it"
+            for="field-18"
+            id="field-18-label"
+          >
+            How many Years do you have Driving Licence?
+            <span
+              aria-hidden="true"
+              class="chakra-form__required-indicator css-1u8qly9"
+              role="presentation"
+            >
+              *
+            </span>
+          </label>
+          <div
+            class="chakra-select__wrapper css-1njiejo"
+          >
+            <select
+              aria-required="true"
+              class="chakra-select css-14obxjv"
+              id="field-18"
+              name="licenseYear"
+              required=""
+            >
+              <option
+                value="0"
+              >
+                0
+              </option>
+              <option
+                value="1"
+              >
+                1
+              </option>
+              <option
+                value="2"
+              >
+                2
+              </option>
+              <option
+                value="3"
+              >
+                3
+              </option>
+              <option
+                value="4"
+              >
+                4
+              </option>
+              <option
+                value="5+"
+              >
+                5+
+              </option>
+            </select>
+            <div
+              class="chakra-select__icon-wrapper css-1dt125m"
+            >
+              <svg
+                aria-hidden="true"
+                class="chakra-select__icon"
+                focusable="false"
+                role="presentation"
+                style="width: 1em; height: 1em; color: currentColor;"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="chakra-form-control css-1lxvb1z"
+          role="group"
+        >
+          <label
+            class="chakra-form__label css-5nk1it"
+            for="car-make"
+            id="field-19-label"
+          >
+            Car make
+            <span
+              aria-hidden="true"
+              class="chakra-form__required-indicator css-1u8qly9"
+              role="presentation"
+            >
+              *
+            </span>
+          </label>
+          <input
+            aria-describedby="field-19-feedback"
+            aria-required="true"
+            class="chakra-input css-1u8qly9"
+            id="car-make"
+            name="carMake"
+            placeholder="Car make"
+            required=""
+            value=""
+          />
+        </div>
+        <div
+          class="chakra-form-control css-1lxvb1z"
+          role="group"
+        >
+          <label
+            class="chakra-form__label css-5nk1it"
+            for="car-model"
+            id="field-20-label"
+          >
+            Car model
+            <span
+              aria-hidden="true"
+              class="chakra-form__required-indicator css-1u8qly9"
+              role="presentation"
+            >
+              *
+            </span>
+          </label>
+          <input
+            aria-describedby="field-20-feedback"
+            aria-required="true"
+            class="chakra-input css-1u8qly9"
+            id="car-model"
+            name="carModel"
+            placeholder="Car model"
+            required=""
+            value=""
+          />
+        </div>
+        <div
+          class="chakra-form-control css-i55s4y"
+          role="group"
+        >
+          <label
+            class="chakra-form__label css-5nk1it"
+            for="field-21"
+            id="field-21-label"
+          >
+            Car manufacturer date
+            <span
+              aria-hidden="true"
+              class="chakra-form__required-indicator css-1u8qly9"
+              role="presentation"
+            >
+              *
+            </span>
+          </label>
+          <div
+            class="react-datepicker-wrapper datepicker-container"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <input
+                aria-describedby="field-21-feedback"
+                aria-required="true"
+                class="chakra-input css-1u8qly9"
+                id="field-21"
+                name="carManufacturerDate"
+                placeholder="Car manufacturer date"
+                readonly=""
+                required=""
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="css-zdi8tq"
+        >
+          <button
+            aria-label="go-back"
+            class="chakra-button css-1tjo9a5"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="chakra-icon css-1e46pwz"
+              fill="none"
+              focusable="false"
+              height="1em"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="19"
+                x2="5"
+                y1="12"
+                y2="12"
+              />
+              <polyline
+                points="12 19 5 12 12 5"
+              />
+            </svg>
+          </button>
+          <button
+            class="chakra-button css-1xkcy2y"
+            type="submit"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>,
+  "container": <div>
+    <h2
+      class="chakra-heading css-1r2fo6r"
+    >
+      Car detail
+    </h2>
+    <form
+      action="#"
+    >
+      <div
+        class="chakra-form-control css-1lxvb1z"
+        role="group"
+      >
+        <label
+          class="chakra-form__label css-5nk1it"
+          for="plate-number"
+          id="field-15-label"
+        >
+          Plate number
+          <span
+            aria-hidden="true"
+            class="chakra-form__required-indicator css-1u8qly9"
+            role="presentation"
+          >
+            *
+          </span>
+        </label>
+        <input
+          aria-describedby="field-15-feedback"
+          aria-required="true"
+          class="chakra-input css-1u8qly9"
+          id="plate-number"
+          name="plateNumber"
+          placeholder="Plate number"
+          required=""
+          value=""
+        />
+      </div>
+      <fieldset
+        class="chakra-form-control css-1lxvb1z"
+        role="group"
+      >
+        <legend
+          class="chakra-form__label css-5nk1it"
+          for="field-16"
+          id="field-16-label"
+        >
+          Do you made any Claims in last 5 years?
+          <span
+            aria-hidden="true"
+            class="chakra-form__required-indicator css-1u8qly9"
+            role="presentation"
+          >
+            *
+          </span>
+        </legend>
+        <div
+          class="chakra-radio-group css-1u8qly9"
+          role="radiogroup"
+        >
+          <div
+            class="chakra-stack css-73c8f7"
+          >
+            <label
+              class="chakra-radio css-lg1h1w"
+            >
+              <input
+                aria-required="true"
+                checked=""
+                class="chakra-radio__input"
+                id="field-16"
+                name="radio-17"
+                required=""
+                style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                type="radio"
+                value="yes"
+              />
+              <span
+                aria-hidden="true"
+                class="chakra-radio__control css-1xwtn74"
+                data-checked=""
+              />
+              <span
+                class="chakra-radio__label css-1tcmnzo"
+                data-checked=""
+              >
+                Yes
+              </span>
+            </label>
+            <label
+              class="chakra-radio css-lg1h1w"
+            >
+              <input
+                aria-required="true"
+                class="chakra-radio__input"
+                id="field-16"
+                name="radio-17"
+                required=""
+                style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                type="radio"
+                value="no"
+              />
+              <span
+                aria-hidden="true"
+                class="chakra-radio__control css-1xwtn74"
+              />
+              <span
+                class="chakra-radio__label css-1tcmnzo"
+              >
+                No
+              </span>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <div
+        class="chakra-form-control css-1lxvb1z"
+        role="group"
+      >
+        <label
+          class="chakra-form__label css-5nk1it"
+          for="field-18"
+          id="field-18-label"
+        >
+          How many Years do you have Driving Licence?
+          <span
+            aria-hidden="true"
+            class="chakra-form__required-indicator css-1u8qly9"
+            role="presentation"
+          >
+            *
+          </span>
+        </label>
+        <div
+          class="chakra-select__wrapper css-1njiejo"
+        >
+          <select
+            aria-required="true"
+            class="chakra-select css-14obxjv"
+            id="field-18"
+            name="licenseYear"
+            required=""
+          >
+            <option
+              value="0"
+            >
+              0
+            </option>
+            <option
+              value="1"
+            >
+              1
+            </option>
+            <option
+              value="2"
+            >
+              2
+            </option>
+            <option
+              value="3"
+            >
+              3
+            </option>
+            <option
+              value="4"
+            >
+              4
+            </option>
+            <option
+              value="5+"
+            >
+              5+
+            </option>
+          </select>
+          <div
+            class="chakra-select__icon-wrapper css-1dt125m"
+          >
+            <svg
+              aria-hidden="true"
+              class="chakra-select__icon"
+              focusable="false"
+              role="presentation"
+              style="width: 1em; height: 1em; color: currentColor;"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        class="chakra-form-control css-1lxvb1z"
+        role="group"
+      >
+        <label
+          class="chakra-form__label css-5nk1it"
+          for="car-make"
+          id="field-19-label"
+        >
+          Car make
+          <span
+            aria-hidden="true"
+            class="chakra-form__required-indicator css-1u8qly9"
+            role="presentation"
+          >
+            *
+          </span>
+        </label>
+        <input
+          aria-describedby="field-19-feedback"
+          aria-required="true"
+          class="chakra-input css-1u8qly9"
+          id="car-make"
+          name="carMake"
+          placeholder="Car make"
+          required=""
+          value=""
+        />
+      </div>
+      <div
+        class="chakra-form-control css-1lxvb1z"
+        role="group"
+      >
+        <label
+          class="chakra-form__label css-5nk1it"
+          for="car-model"
+          id="field-20-label"
+        >
+          Car model
+          <span
+            aria-hidden="true"
+            class="chakra-form__required-indicator css-1u8qly9"
+            role="presentation"
+          >
+            *
+          </span>
+        </label>
+        <input
+          aria-describedby="field-20-feedback"
+          aria-required="true"
+          class="chakra-input css-1u8qly9"
+          id="car-model"
+          name="carModel"
+          placeholder="Car model"
+          required=""
+          value=""
+        />
+      </div>
+      <div
+        class="chakra-form-control css-i55s4y"
+        role="group"
+      >
+        <label
+          class="chakra-form__label css-5nk1it"
+          for="field-21"
+          id="field-21-label"
+        >
+          Car manufacturer date
+          <span
+            aria-hidden="true"
+            class="chakra-form__required-indicator css-1u8qly9"
+            role="presentation"
+          >
+            *
+          </span>
+        </label>
+        <div
+          class="react-datepicker-wrapper datepicker-container"
+        >
+          <div
+            class="react-datepicker__input-container"
+          >
+            <input
+              aria-describedby="field-21-feedback"
+              aria-required="true"
+              class="chakra-input css-1u8qly9"
+              id="field-21"
+              name="carManufacturerDate"
+              placeholder="Car manufacturer date"
+              readonly=""
+              required=""
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="css-zdi8tq"
+      >
+        <button
+          aria-label="go-back"
+          class="chakra-button css-1tjo9a5"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="chakra-icon css-1e46pwz"
+            fill="none"
+            focusable="false"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="19"
+              x2="5"
+              y1="12"
+              y2="12"
+            />
+            <polyline
+              points="12 19 5 12 12 5"
+            />
+          </svg>
+        </button>
+        <button
+          class="chakra-button css-1xkcy2y"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -18,14 +18,14 @@ import {
 } from "@chakra-ui/react";
 import * as Yup from "yup";
 import { useHistory } from "react-router-dom";
-import { PERSONAL_DETAILS, SUCCESS } from "../routes";
+import { PERSONAL_DETAILS, SUCCESS } from "../../routes";
 import { FiArrowLeft } from "react-icons/fi";
-import DatePicker from "../components/DatePicker";
+import DatePicker from "../../components/DatePicker";
 import { connect } from "react-redux";
-import { setStepIndex, setCarDetails, submit } from "../features/appSlice";
+import { setStepIndex, setCarDetails, submit } from "../../features/appSlice";
 import { unwrapResult } from "@reduxjs/toolkit";
 
-function PersonalDetailForm({
+export function CarDetailForm({
   nextStep,
   prevStep,
   initialValues,
@@ -262,4 +262,4 @@ const mapDispatchToProps = dispatch => ({
   prevStep: () => dispatch(setStepIndex(0))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(PersonalDetailForm);
+export default connect(mapStateToProps, mapDispatchToProps)(CarDetailForm);
