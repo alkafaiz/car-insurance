@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form actions should setCarDetails action creator updates the store 1`] = `
+Object {
+  "carMake": "Honda",
+  "carManufacturerDate": "2003-03-16T05:05:46.822Z",
+  "carModel": "City",
+  "hasClaim": "yes",
+  "licenseYear": "2",
+  "plateNumber": "1212",
+}
+`;
+
+exports[`Form actions should setPersonalDetails action creator updates the store 1`] = `
+Object {
+  "dob": "2000-03-16T05:05:46.822Z",
+  "email": "johndoe@gmail.com",
+  "firstName": "John",
+  "lastName": "Doe",
+}
+`;

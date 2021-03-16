@@ -13,5 +13,11 @@ module.exports = {
     "node",
     "css",
     "scss"
+  ],
+  collectCoverageFrom: [
+    "<rootDir>/src/**/*.{ts,tsx,js,jsx}",
+    "!/node_modules/",
+    "!src/serviceWorker.ts",
+    "!src/index.js"
   ]
 };

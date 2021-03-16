@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { api } from "../api";
 
 const initialState = {
   stepIndex: 0,
@@ -18,18 +19,6 @@ const initialState = {
   success: false
 };
 
-const mockApi = scenario =>
-  new Promise(resolve => {
-    setTimeout(function() {
-      const response =
-        scenario === "failed"
-          ? { success: false, message: "Unable to process requests." }
-          : { success: true };
-
-      resolve(response);
-    }, 3000);
-  });
-
 export const submit = createAsyncThunk(
   "app/submit",
   async (payload, thunkApi) => {
@@ -38,10 +27,10 @@ export const submit = createAsyncThunk(
     const mockFailed = plateNumber === "111";
 
     if (mockFailed) {
-      const response = await mockApi("failed");
+      const response = await api.submit("/submit", false);
       return thunkApi.rejectWithValue(response);
     } else {
-      const response = await mockApi("success");
+      const response = await api.submit("/submit");
       return response;
     }
   }
@@ -90,4 +79,4 @@ export const {
   setCarDetails
 } = appSlice.actions;
 
-export default appSlice.reducer;
+export const appReducer = appSlice.reducer;
